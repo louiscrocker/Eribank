@@ -46,6 +46,8 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(emailOrPasswordChanged)
                                                  name:UITextFieldTextDidChangeNotification object:nil];
+    [usernameTextField setText:@"company"];
+    [passwordTextField setText:@"company"];
 }
 
 - (void)viewDidUnload
